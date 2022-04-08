@@ -1,9 +1,9 @@
-import './category-item.styles.scss';
+import './derectory-item.styles.scss';
 
-const CategoryItem = ({ category }) => {
+const DerectoryItem = ({ category }) => {
   const { imageUrl, title } = category;
   return (
-    <div className='category-container'>
+    <div className='derectory-item-container'>
       <div
         className='background-image'
         style={{
@@ -18,4 +18,4 @@ const CategoryItem = ({ category }) => {
   );
 };
 
-export default CategoryItem;
+export default DerectoryItem;
