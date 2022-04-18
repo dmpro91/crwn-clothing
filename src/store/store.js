@@ -13,7 +13,7 @@ const presistConfig = {
 
 const presistedReducer = persistReducer(presistConfig, rootReducer);
 
-const middleWares = [logger];
+const middleWares = [process.env.NODE_ENV === 'development' && logger].filter(Boolean);
 
 const composeEnhancers = compose(applyMiddleware(...middleWares));
 
